@@ -1,12 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <button>123</button>
-</body>
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0;
+                text-align: center;
+                user-select: none;
+                font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Tahoma,PingFang SC,Microsoft Yahei,Arial,Hiragino Sans GB,sans-serif;
+                font-feature-settings: "tnum";
+                -webkit-tap-highlight-color: transparent;
+                -webkit-font-smoothing: antialiased
+            }
+
+            button {
+                position: relative;
+                display: inline-block;
+                min-width: 76px;
+                height: 32px;
+                line-height: 24px;
+                padding: 0 15px;
+                margin: 0 auto;
+                border-radius: 4px;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: 0;
+                box-shadow: none;
+                transition: none;
+                cursor: pointer;
+                white-space: nowrap;
+                text-align: center;
+                touch-action: manipulation
+            }
+
+            .primary {
+                border: none;
+                background-color: #3370ff;
+                color: #fff;
+                outline: 0
+            }
+
+            .primary:hover {
+                background-color: #4e83fd
+            }
+
+            .primary:active {
+                background-color: #245bdb
+            }
+        </style>
+    </head>
+    <body>
+        <button id="google-auth" class="primary">Add New Google Account</button>
+    </body>
 </html>
